@@ -1,0 +1,164 @@
+
+<!-- saved from url=(0054)https://ff4humanity.github.io/FreeHealthCode/main.html -->
+<html lang="en" class="pixel-ratio-2 retina android android-6 android-6-0"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>苏康码</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./mod.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./jquery.qrcode.min.js"></script>
+    <script src="./mod.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-pic">
+        <div class="icons">
+          <div class="icon"></div>
+          <div>苏康码</div>
+        </div>
+      </div>
+      <form class="" id="codes">
+        <div class="pic">
+          <div class="icons"></div>
+          <div class="code-name">
+            <div id="code-name">高航</div>
+            <div id="code-id">
+              <span id="code1">320</span>******<span id="code2">042</span>
+              <script>
+                setPersonalInfo();
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="code-layout">
+          <div class="shadow-layout">
+            <p class="text-center" id="now-time">06-01 10:13:37</p>
+            <div id="ymjz">
+              <div class="codeimg"></div>
+              <div class="ymjzimg"></div>
+              <div id="output" class=""><canvas width="230" height="230"></canvas></div>
+            </div>
+            <!-- <div class="uncityData">
+              <div style="display: flex; justify-content: space-between">
+                <div class="tips">
+                  <p class="love hide"></p>
+                  <p class="star"></p>
+                  <span class="green" id="codes-text">
+                    绿色：勤洗手、常通风、戴口罩，出现发热咳嗽等症状请及时就医
+                  </span>
+                </div>
+              </div>
+            </div> -->
+            <p id="rjmj"></p>
+            <p id="jjgl" class="hide"></p>
+          </div>
+        </div>
+        <div><img url="t-1."></div>
+        <div class="hsym-layout uncityData">
+          <div class="hs-layout">
+            <div class="shadow-layout-hsym hs-1" id="hs-layout">
+              <script>
+                setHstatus();
+              </script>
+              <div class="hsym-title">核酸(省内)</div>
+              <div class="hsym-contont" id="hs-content">
+                <div class="hs-result">
+                  <div>48</div>
+                  <div>小时<br>阴性</div>
+                </div>
+                <div class="no-hsym">暂未查询到数据</div>
+              </div>
+              <div class="hsym-footer">
+                <div class="turn-right-icon"></div>
+                <span id="hs-footer">右滑刷新</span>
+              </div>
+            </div>
+          </div>
+          <div class="ym-layout">
+            <div class="shadow-layout-hsym ym-1" id="ym-layout">
+              <script>
+                setYm();
+              </script>
+              <div class="hsym-title">新冠疫苗</div>
+              <div class="hsym-contont" id="ym-content">
+                <div class="ym-result">已加强接种</div>
+                <div class="no-hsym">暂未查询到数据</div>
+              </div>
+              <div class="hsym-footer">
+                <span id="ym-footer">左滑刷新</span>
+                <div class="turn-left-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xingcheng uncityData">
+          <div class="shadow-layout" id="xingchengBtn">
+            <div class="xingcheng-layout">
+              <div class="xingcheng-pic"></div>
+              <div><a href="https://ff4humanity.github.io/FreeHealthCode/xck.html">通信大数据行程卡</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-layout uncityData">
+          <div class="shadow-layout">
+            <div class="fxbb">
+              <div class="fxsb-layout border-right" id="goAdd">
+                <div class="bottoms-pic addhea"></div>
+                <div class="fxsb-center">
+                  <p class="fxsb-right-top">风险报备</p>
+                </div>
+              </div>
+              <div class="fxsb-layout" id="reSubmit">
+                <div class="bottoms-pic updata"></div>
+                <div class="fxsb-center">
+                  <p class="fxsb-right-top">信息更新</p>
+                </div>
+              </div>
+            </div>
+            <div class="bottoms-btns">
+              <div id="addChildBtn">
+                <div class="bottoms-pic addchild"></div>
+                <p>家庭成员</p>
+              </div>
+              <div id="hsjcBtn">
+                <a href="https://ff4humanity.github.io/FreeHealthCode/hs.html"><div class="bottoms-pic kangti"></div></a>
+                <p>核酸/抗体<br>检测查询(全国)</p>
+              </div>
+              <div id="queryChinaBtn">
+                <div class="bottoms-pic guo"></div>
+                <p>国家防疫<br>健康信息码</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gwyxckcx xc-0">
+          <script>
+            setXc();
+          </script>
+          <div class="shadow-layout">
+            <div class="gwyxck-btn">点击核验</div>
+            <p class="gwyxck-name">国务院行程卡查询</p>
+            <div class="gwyxck-btns">今日未核验</div>
+            <p class="gwyxck-tip1">您14天内未到访过中高风险地区所在城市</p>
+            <p class="gwyxck-tip2">
+              您14天内到达或途径过中高风险地区所在城市(不表示实际到访过这些中高风险地区)
+            </p>
+          </div>
+        </div>
+        <p class="sjly">
+          <a href="http://www.jszwfw.gov.cn/jmopen/webapp/html5/sjly/index.html">
+            数据来源:全国一体化政务服务平台、个人申报信息和江苏省公共管理机构。
+          </a>
+        </p>
+      </form>
+    </div>
+    <div class="jsm-footer">
+      <p class="code-footer">本服务由江苏省疾病预防控制中心提供</p>
+      <p class="code-footer">--- 服务热线：12345 ---</p>
+    </div>
+  
+
+</body></html>

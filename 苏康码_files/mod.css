@@ -1,0 +1,36 @@
+#code-name,
+#code-id {
+  user-select: none;
+}
+
+.gwyxck-btn,
+.gwyxck-btns,
+.gwyxck-tip1,
+.gwyxck-tip2 {
+  display: none;
+}
+
+.xc-0 .gwyxck-btn,
+.xc-0 .gwyxck-btns {
+  display: block;
+}
+
+.xc-1 .gwyxck-tip1 {
+  display: block;
+}
+
+.xc-2 .gwyxck-tip2 {
+  display: block;
+}
+
+#area {
+  color: black !important;
+  /* font-weight: bold !important; */
+}
+
+.bott {
+  line-height: 1.2 !important;
+  font-size: 16px !important;
+  text-align: left !important;
+  display: block !important;
+}
